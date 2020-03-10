@@ -3,12 +3,12 @@
 	--Создание базы данных с помощью оператора CREATE DATABASE
 use master
 go
-create database BookShopDB_374_3
+create database CopyBookShopDB_374_3
 --Основной файл
 on primary
 (
-name = BookShop_dat,
-filename = "C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA\ BookShop_374_3.mdf",
+name = CopyBookShop_dat_374_3,
+filename = "C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA\ CopyBookShop_374_3.mdf",
 size = 4,--Первоначальный размер файла равен 4 МБ
 maxsize = 10,--максимальный размер – 10 МБ
 filegrowth = 1--Инкремент роста файла составляет 1 МБ.
@@ -16,7 +16,7 @@ filegrowth = 1--Инкремент роста файла составляет 1 МБ.
 --Журнал файл
 log on
 (
-name = BookShop_log,
+name = BookShop_log_374_3,
 filename  = "C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA\ BookShop_374_3.ldf",
 size = 2,
 maxsize = 5,
@@ -30,7 +30,7 @@ go
 
 
 	--Удаление базы данных
-drop database BookShopDB_374_3
+drop database CopyBookShopDB_374_3--BookShopDB_374_3
 
 	--Создание базы данных с помощью SQL Server Enterprise Manager
 --Щелкните правой кнопкой узел Databases, а затем щелкните New Databases.
