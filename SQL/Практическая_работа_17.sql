@@ -43,4 +43,4 @@ drop database BookShopDB_374_3 --BookShopDB_374_3
 
 	--Удаление данных из базы
 --Щёлкните кнопку Delete.
---Файл Bookdata2 удален из базы данных.
+--Файл Bookdata2 удален из базы данных. 
